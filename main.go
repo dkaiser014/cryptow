@@ -1,9 +1,9 @@
 package main
 
 import (
-	"cryptow/pkg/getdata"
+	"cryptow/pkg/printdata"
 )
 
 func main() {
-	getdata.GetData()
+	printdata.PrintData()
 }
