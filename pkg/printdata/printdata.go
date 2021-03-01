@@ -3,7 +3,9 @@ package printdata
 import (
 	"encoding/json"
 	"fmt"
+	"strconv"
 
+	"cryptow/pkg/colors"
 	"cryptow/pkg/getdata"
 )
 
@@ -60,6 +62,10 @@ func PrintData() {
 	json.Unmarshal([]byte(getdata.GetData()), &crypto)
 
 	for i := 0; i < len(crypto.Data); i++ {
-		fmt.Println(crypto.Data[i].Name)
+		name := string(crypto.Data[i].Name)
+		price := strconv.FormatFloat(crypto.Data[i].Quote.Usd.Price, 'f', 5, 64)
+
+		fmt.Println("\n"+colors.Color("white"), "Name: "+name)
+		fmt.Println(colors.Color("green"), "Price: "+price+"\n")
 	}
 }
