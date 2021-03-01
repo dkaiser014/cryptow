@@ -12,6 +12,6 @@ I'm able to run from my terminal that list all cryptos and their prices it's inc
 
 - [x] Do an API request to the [coinmarketcap.com](https://coinmarketcap.com)
 - [x] List all the cryptocurrencies.
-- [ ] Refactor and improve the `main.go` file.
-- [ ] Print the cryptos with their prices below or at the side.
-- [ ] Add colors to the prices.
+- [x] Refactor and improve the `main.go` file.
+- [x] Print the cryptos with their prices below or at the side.
+- [x] Add colors to the prices.
